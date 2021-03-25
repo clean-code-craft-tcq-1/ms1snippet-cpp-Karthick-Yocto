@@ -12,11 +12,11 @@ TEST_CASE("Reports error when soc jumps abruptly") {
 TEST_CASE("Reports error when current jumps abruptly") {
   double currentReadings[] = {0.03, 0.03, 0.03, 0.33};
   int numOfCurReadings = sizeof(currentReadings) / sizeof(currentReadings[0]);
-  REQUIRE(validateSOCreadings(currentReadings, numOfCurReadings) == false);
+  REQUIRE(validateCurrentreadings(currentReadings, numOfCurReadings) == false);
 }
 
 TEST_CASE("reports error when function pointers are NULL") {
   double currentReadings[] = {NULL};
-    REQUIRE(funcpointercalc(currentReadings) == 0  );
+    REQUIRE(validateCurrentreadings(currentReadings,0) == 0  );
 }
 
