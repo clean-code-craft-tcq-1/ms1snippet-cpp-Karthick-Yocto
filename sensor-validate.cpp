@@ -1,4 +1,5 @@
 #include "sensor-validate.h"
+#include "math.h"
 /* =================================================================================
 * Function Name : IsSuddenJumpObserved
 * Description   : To check sudden jump
