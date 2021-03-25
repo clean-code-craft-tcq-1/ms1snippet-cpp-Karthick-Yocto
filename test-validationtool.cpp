@@ -17,6 +17,6 @@ TEST_CASE("Reports error when current jumps abruptly") {
 
 TEST_CASE("reports error when function pointers are NULL") {
   double currentReadings[] = {NULL};
-    REQUIRE(validateCurrentreadings(currentReadings,0) == 0  );
+    REQUIRE(validateCurrentreadings(currentReadings,0) == true  );
 }
 
