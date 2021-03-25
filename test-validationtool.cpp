@@ -15,8 +15,8 @@ TEST_CASE("Reports error when current jumps abruptly") {
   REQUIRE(validateSOCreadings(currentReadings, numOfCurReadings) == false);
 }
 
-TEST_CASE("Check for NULL pointer") {
-  double* currentReadings = NULL;
-  int numOfCurReadings = 0;
-  REQUIRE(validateCurrentreadings(currentReadings, numOfCurReadings, Normal) == true);
+TEST_CASE("reports error when function pointers are NULL") {
+  double currentReadings[] = {NULL};
+    REQUIRE(funcpointercalc(currentReadings) == 0  );
+}
 
